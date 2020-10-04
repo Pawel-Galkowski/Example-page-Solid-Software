@@ -1,0 +1,342 @@
+@font-face {
+  font-family: effra;
+  src: url("./fonts/effra_std_bd-webfont.woff");
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: effra;
+  position: relative;
+}
+
+a {
+  color: #010050;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-2 {
+  margin: 2%;
+}
+
+.m-4 {
+  margin: 4%;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.bg-blue {
+  background-color: #010050;
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+  color: darkblue;
+}
+
+.br-white{
+    border: 2px solid white !important;
+}
+
+.br-blue{
+    border: 2px solid #010050 !important;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+#top-nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+#top-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#header-photo {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/0095EUIV2018RT-original.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 75%;
+}
+
+.center-box {
+  max-width: 400px;
+  background-color: rgba(0, 181, 231, 0.4);
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  padding: 1% 2%;
+}
+
+.center-box input,
+.container input {
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  height: auto;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.container .box-100 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .box-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container .box-100 input,
+.center-box input,
+.simple-trip input,
+.grid-journeys input {
+  padding: 0.4rem 0.8rem;
+  border: 1px;
+}
+
+.container .box-50 {
+  width: 100%;
+  font-weight: normal;
+  text-align: left;
+}
+
+.container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.important {
+  font-weight: 800;
+}
+
+.grid-journeys {
+  display: grid;
+  grid-template: auto;
+  gap: 0.5rem;
+}
+
+.grid-journeys div{
+    margin: 1rem 0
+}
+
+.grid-journeys p {
+  text-transform: uppercase;
+}
+
+.grid-journeys img{
+    width: 100%;
+}
+
+.promotion-section {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.promotion-center {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-trips {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.simple-trip {
+  padding: 0.5rem 2rem;
+  text-align: center;
+  width: 60%;
+  min-height: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 0.5rem auto;
+}
+
+.trips-description {
+  margin: 1rem 0;
+  font-size: 0.6rem;
+}
+
+footer {
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+footer .small-countainer {
+  width: 300px;
+  margin: 0 auto;
+}
+
+footer .footer-images {
+  margin: 0 auto 0.5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer img {
+  width: 40px;
+}
+
+@media (min-width: 700px) {
+    #header-photo{
+        height: 30vh;
+    }
+
+    #top-nav {
+        flex-direction: row;
+    }
+
+    .container .box-100{
+        flex-direction: row;
+    }
+
+    .container .box-50 {
+        width: 50%;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .grid-journeys {
+        display: grid;
+        grid-template: 350px / auto auto auto;
+        gap: 0.5rem;
+    }
+
+    .grid-journeys div{
+        margin: 0;
+    }
+
+    .flex-trips{
+        flex-direction: row;
+    }
+
+    .simple-trip {
+        width: 200px;
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 700px) {
+    #header-photo{
+        height: 40vh;
+    }
+
+    #top-nav {
+        flex-direction: row;
+        max-height: 70px;
+    }
+
+    .container .box-100{
+        flex-direction: row;
+    }
+
+    .container .box-50 {
+        width: 50%;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .grid-journeys {
+        display: grid;
+        grid-template: 350px / auto auto auto;
+        gap: 0.5rem;
+    }
+
+    .grid-journeys div{
+        margin: 0;
+    }
+
+    .flex-trips{
+        flex-direction: row;
+    }
+
+    .simple-trip {
+        width: 140px;
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 900px) {
+    .simple-trip {
+        width: 200px;
+        max-width: 30%;
+    }
+}
