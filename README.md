@@ -1,5 +1,6 @@
 # HTML TASK
 
+HTML task for Solid Software
 Page created in 2 hours from the image view.
 
 ## Technology stack
